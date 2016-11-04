@@ -1,0 +1,51 @@
+# Uncomment the next line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
+# platform :ios, '9.0'
+
+
+  # Pods for RappiChallenge
+target 'RappiChallenge' do
+    inherit! :search_paths
+    use_frameworks!
+    # Pods for testing
+    pod 'Realm'
+    pod 'RealmSwift'
+    pod 'Alamofire', '~> 3.5.1'
+    pod 'SwiftyJSON', '2.4.0'
+    pod 'SDWebImage', '~>3.8'
+    pod 'ReachabilitySwift', '~> 2.4'
+end
+
+
+  target 'RappiChallengeTests' do
+    inherit! :search_paths
+    use_frameworks!
+    # Pods for testing
+    	pod 'Realm'
+	pod 'RealmSwift'
+    pod 'Alamofire', '~> 3.5.1'
+    pod 'SwiftyJSON', '2.4.0'
+    pod 'SDWebImage', '~>3.8'
+    pod 'ReachabilitySwift', '~> 2.4'
+  end
+
+  target 'RappiChallengeUITests' do
+    inherit! :search_paths
+    use_frameworks!
+    # Pods for testing
+    	pod 'Realm'
+	pod 'RealmSwift'
+    pod 'Alamofire', '~> 3.5.1'
+    pod 'SwiftyJSON', '2.4.0'
+    pod 'SDWebImage', '~>3.8'
+    pod 'ReachabilitySwift', '~> 2.4'
+  end
+
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['SWIFT_VERSION'] = '2.3' # or '3.0'
+    end
+  end
+end

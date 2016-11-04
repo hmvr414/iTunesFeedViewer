@@ -1,0 +1,6 @@
+framework module Pods_RappiChallengeUITests {
+  umbrella header "Pods-RappiChallengeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

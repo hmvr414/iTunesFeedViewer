@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA10666F1DCAD1D600D0A133 /* FeedEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10666E1DCAD1D600D0A133 /* FeedEntry.swift */; };
+		AA74C1C61DCB8BC600922E68 /* ITunesFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74C1C51DCB8BC600922E68 /* ITunesFeedManager.swift */; };
 		AA9863F21DCACF7D004EED88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9863F11DCACF7D004EED88 /* AppDelegate.swift */; };
 		AA9863F41DCACF7D004EED88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9863F31DCACF7D004EED88 /* ViewController.swift */; };
 		AA9863F71DCACF7D004EED88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9863F51DCACF7D004EED88 /* Main.storyboard */; };
@@ -14,6 +16,10 @@
 		AA9863FC1DCACF7D004EED88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9863FA1DCACF7D004EED88 /* LaunchScreen.storyboard */; };
 		AA9864071DCACF7E004EED88 /* RappiChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9864061DCACF7E004EED88 /* RappiChallengeTests.swift */; };
 		AA9864121DCACF7E004EED88 /* RappiChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9864111DCACF7E004EED88 /* RappiChallengeUITests.swift */; };
+		AAE4E6261DCC23AD004FEB22 /* ArrayTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4E6251DCC23AD004FEB22 /* ArrayTransform.swift */; };
+		AFF1DA8EBD5FEEF925ED8F2D /* Pods_RappiChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B564E3CC10898AA6B6B128 /* Pods_RappiChallengeUITests.framework */; };
+		BD5DF2A4431FC2E7CF0B3435 /* Pods_RappiChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C02F00AE45AEBEBDA8C1BE /* Pods_RappiChallenge.framework */; };
+		D453763E06016C55D4389A5D /* Pods_RappiChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6068D88EF889D32A45CE8E23 /* Pods_RappiChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09CE2EF2D1170360E691FE68 /* Pods-RappiChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RappiChallengeUITests/Pods-RappiChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		16B564E3CC10898AA6B6B128 /* Pods_RappiChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RappiChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21C02F00AE45AEBEBDA8C1BE /* Pods_RappiChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RappiChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE7ACE34B7B16BF29B761BA /* Pods-RappiChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RappiChallengeTests/Pods-RappiChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		6068D88EF889D32A45CE8E23 /* Pods_RappiChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RappiChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F2B7BA5F917BD06AF98A105 /* Pods-RappiChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RappiChallengeUITests/Pods-RappiChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7ACEC57F3DCC7CC2C56AA9A /* Pods-RappiChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RappiChallenge/Pods-RappiChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		AA10666E1DCAD1D600D0A133 /* FeedEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedEntry.swift; path = Models/FeedEntry.swift; sourceTree = "<group>"; };
+		AA74C1C51DCB8BC600922E68 /* ITunesFeedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ITunesFeedManager.swift; path = Services/ITunesFeedManager.swift; sourceTree = "<group>"; };
 		AA9863EE1DCACF7D004EED88 /* RappiChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RappiChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA9863F11DCACF7D004EED88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA9863F31DCACF7D004EED88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +62,9 @@
 		AA98640D1DCACF7E004EED88 /* RappiChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RappiChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA9864111DCACF7E004EED88 /* RappiChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RappiChallengeUITests.swift; sourceTree = "<group>"; };
 		AA9864131DCACF7E004EED88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE4E6251DCC23AD004FEB22 /* ArrayTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayTransform.swift; path = Util/ArrayTransform.swift; sourceTree = "<group>"; };
+		EC6E115CE9A9B65CE940CEB3 /* Pods-RappiChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RappiChallengeTests/Pods-RappiChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD757A88AC3DF0805EC05A5D /* Pods-RappiChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-RappiChallenge/Pods-RappiChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5DF2A4431FC2E7CF0B3435 /* Pods_RappiChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D453763E06016C55D4389A5D /* Pods_RappiChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +88,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF1DA8EBD5FEEF925ED8F2D /* Pods_RappiChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B28FCDA97E0C8110BECDB15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC6E115CE9A9B65CE940CEB3 /* Pods-RappiChallengeTests.debug.xcconfig */,
+				5AE7ACE34B7B16BF29B761BA /* Pods-RappiChallengeTests.release.xcconfig */,
+				6F2B7BA5F917BD06AF98A105 /* Pods-RappiChallengeUITests.debug.xcconfig */,
+				09CE2EF2D1170360E691FE68 /* Pods-RappiChallengeUITests.release.xcconfig */,
+				A7ACEC57F3DCC7CC2C56AA9A /* Pods-RappiChallenge.debug.xcconfig */,
+				FD757A88AC3DF0805EC05A5D /* Pods-RappiChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		33517ABE44ED3F7AE7111F28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21C02F00AE45AEBEBDA8C1BE /* Pods_RappiChallenge.framework */,
+				6068D88EF889D32A45CE8E23 /* Pods_RappiChallengeTests.framework */,
+				16B564E3CC10898AA6B6B128 /* Pods_RappiChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA10666D1DCAD1A400D0A133 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA10666E1DCAD1D600D0A133 /* FeedEntry.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AA74C1C21DCAF39A00922E68 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA74C1C51DCB8BC600922E68 /* ITunesFeedManager.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		AA9863E51DCACF7A004EED88 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +141,8 @@
 				AA9864051DCACF7E004EED88 /* RappiChallengeTests */,
 				AA9864101DCACF7E004EED88 /* RappiChallengeUITests */,
 				AA9863EF1DCACF7D004EED88 /* Products */,
+				2B28FCDA97E0C8110BECDB15 /* Pods */,
+				33517ABE44ED3F7AE7111F28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +159,9 @@
 		AA9863F01DCACF7D004EED88 /* RappiChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				AAE4E6241DCC22A4004FEB22 /* Util */,
+				AA74C1C21DCAF39A00922E68 /* Services */,
+				AA10666D1DCAD1A400D0A133 /* Models */,
 				AA9863F11DCACF7D004EED88 /* AppDelegate.swift */,
 				AA9863F31DCACF7D004EED88 /* ViewController.swift */,
 				AA9863F51DCACF7D004EED88 /* Main.storyboard */,
@@ -125,6 +190,14 @@
 			path = RappiChallengeUITests;
 			sourceTree = "<group>";
 		};
+		AAE4E6241DCC22A4004FEB22 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				AAE4E6251DCC23AD004FEB22 /* ArrayTransform.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA9864161DCACF7E004EED88 /* Build configuration list for PBXNativeTarget "RappiChallenge" */;
 			buildPhases = (
+				57711067440CFEE34959F63F /* [CP] Check Pods Manifest.lock */,
 				AA9863EA1DCACF7A004EED88 /* Sources */,
 				AA9863EB1DCACF7A004EED88 /* Frameworks */,
 				AA9863EC1DCACF7A004EED88 /* Resources */,
+				B0966EF397F1EA744D1D65E5 /* [CP] Embed Pods Frameworks */,
+				FFF68498469F7A24B23EB26F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA9864191DCACF7E004EED88 /* Build configuration list for PBXNativeTarget "RappiChallengeTests" */;
 			buildPhases = (
+				5F12E42E56372FDF8DDAA723 /* [CP] Check Pods Manifest.lock */,
 				AA9863FE1DCACF7E004EED88 /* Sources */,
 				AA9863FF1DCACF7E004EED88 /* Frameworks */,
 				AA9864001DCACF7E004EED88 /* Resources */,
+				4D7E3836C816A2210260AF43 /* [CP] Embed Pods Frameworks */,
+				5EF6AD3FE4AEDA957DA510E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +246,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA98641C1DCACF7E004EED88 /* Build configuration list for PBXNativeTarget "RappiChallengeUITests" */;
 			buildPhases = (
+				21032768954DDAD97DA73CD0 /* [CP] Check Pods Manifest.lock */,
 				AA9864091DCACF7E004EED88 /* Sources */,
 				AA98640A1DCACF7E004EED88 /* Frameworks */,
 				AA98640B1DCACF7E004EED88 /* Resources */,
+				A6B31AA686438A3FE70056AE /* [CP] Embed Pods Frameworks */,
+				CE7A6F1D62757EF4542BF2A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,13 +336,154 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21032768954DDAD97DA73CD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4D7E3836C816A2210260AF43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RappiChallengeTests/Pods-RappiChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57711067440CFEE34959F63F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5EF6AD3FE4AEDA957DA510E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RappiChallengeTests/Pods-RappiChallengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F12E42E56372FDF8DDAA723 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A6B31AA686438A3FE70056AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RappiChallengeUITests/Pods-RappiChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0966EF397F1EA744D1D65E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RappiChallenge/Pods-RappiChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE7A6F1D62757EF4542BF2A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RappiChallengeUITests/Pods-RappiChallengeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFF68498469F7A24B23EB26F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RappiChallenge/Pods-RappiChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AA9863EA1DCACF7A004EED88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AA9863F41DCACF7D004EED88 /* ViewController.swift in Sources */,
+				AA74C1C61DCB8BC600922E68 /* ITunesFeedManager.swift in Sources */,
 				AA9863F21DCACF7D004EED88 /* AppDelegate.swift in Sources */,
+				AAE4E6261DCC23AD004FEB22 /* ArrayTransform.swift in Sources */,
+				AA10666F1DCAD1D600D0A133 /* FeedEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +584,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -403,6 +627,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -410,30 +635,33 @@
 		};
 		AA9864171DCACF7E004EED88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7ACEC57F3DCC7CC2C56AA9A /* Pods-RappiChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RappiChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hvallejo.RappiChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
 		AA9864181DCACF7E004EED88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD757A88AC3DF0805EC05A5D /* Pods-RappiChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RappiChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hvallejo.RappiChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
 		AA98641A1DCACF7E004EED88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC6E115CE9A9B65CE940CEB3 /* Pods-RappiChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -441,13 +669,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hvallejo.RappiChallengeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RappiChallenge.app/RappiChallenge";
 			};
 			name = Debug;
 		};
 		AA98641B1DCACF7E004EED88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AE7ACE34B7B16BF29B761BA /* Pods-RappiChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -455,33 +684,35 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hvallejo.RappiChallengeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RappiChallenge.app/RappiChallenge";
 			};
 			name = Release;
 		};
 		AA98641D1DCACF7E004EED88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F2B7BA5F917BD06AF98A105 /* Pods-RappiChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = RappiChallengeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hvallejo.RappiChallengeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 				TEST_TARGET_NAME = RappiChallenge;
 			};
 			name = Debug;
 		};
 		AA98641E1DCACF7E004EED88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09CE2EF2D1170360E691FE68 /* Pods-RappiChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = RappiChallengeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hvallejo.RappiChallengeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 				TEST_TARGET_NAME = RappiChallenge;
 			};
 			name = Release;
@@ -505,6 +736,7 @@
 				AA9864181DCACF7E004EED88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA9864191DCACF7E004EED88 /* Build configuration list for PBXNativeTarget "RappiChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +745,7 @@
 				AA98641B1DCACF7E004EED88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA98641C1DCACF7E004EED88 /* Build configuration list for PBXNativeTarget "RappiChallengeUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +754,7 @@
 				AA98641E1DCACF7E004EED88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
