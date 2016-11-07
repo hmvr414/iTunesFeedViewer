@@ -3,6 +3,7 @@ PODS:
   - AlamofireObjectMapper (4.0.0):
     - Alamofire (~> 4.0)
     - ObjectMapper (~> 2.0)
+  - IBAnimatable (3.0.1)
   - ObjectMapper (2.2.1)
   - ObjectMapper+Realm (0.2):
     - ObjectMapper
@@ -21,6 +22,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.0)
   - AlamofireObjectMapper (~> 4.0)
+  - IBAnimatable
   - ObjectMapper (~> 2.2)
   - ObjectMapper+Realm
   - ReachabilitySwift (~> 3)
@@ -52,6 +54,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   AlamofireObjectMapper: 9faa3ce5a240efda1b209009a2d6e1e949227abc
+  IBAnimatable: 709f04a2b951c55db9ac4d8893684830bbdd0be2
   ObjectMapper: 41e43e1a89f8060ef5ea5d04ba852e269a621d68
   ObjectMapper+Realm: 8b45dbfa1be145e311a6f93a306c183d630b40a9
   ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
@@ -60,6 +63,6 @@ SPEC CHECKSUMS:
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SwiftyJSON: f57b2b44bc166617372d1c70773591fe9f0f5fd4
 
-PODFILE CHECKSUM: afe8f8da4f0e73e081368c64c3401d7ef739e095
+PODFILE CHECKSUM: 278c52e038847e4c19be9aba8ed2ed6ff981dfe5
 
 COCOAPODS: 1.1.1

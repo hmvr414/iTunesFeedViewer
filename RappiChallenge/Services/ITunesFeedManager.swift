@@ -9,30 +9,29 @@
 import RealmSwift
 import Alamofire
 import AlamofireObjectMapper
+import SDWebImage
 
-protocol ITunesFeedManaProtocol : class {
+protocol ITunesFeedManagerProtocol : class {
     
-    // called after the data from fixer.io has been loaded
-    func currencyExchangeDidLoad()
-    
-    // called if an error occurred loading the currency data from fixer.io
-    func currencyExchangeDidLoadWithError()
+    func entriesAvaliable()
 }
 
 class ITunesFeedManager {
     let ITunesFeedEndpoint = "https://itunes.apple.com/us/rss/topfreeapplications/limit=%@/json"
     let feedLimit = "20"
     
-    func checkConnection() {
-    
-    }
-    
-    func loadFeedEntries(jsonString: String) {
-        print("Feeds \(jsonString)");
+    struct Errors {
+        static let webserviceError = 1000
     }
     
     func fetchTopFreeAppsFromLocalStorage() {
+        let realm = try! Realm()
         
+        let apps = realm.objects(FeedEntry.self)
+        
+        for app in apps {
+            print(app)
+        }
     }
     
     func saveLocalStore(apps: List<FeedEntry>) {
@@ -40,7 +39,7 @@ class ITunesFeedManager {
         
         try! realm.write {
             
-            // clear old top 20 rank
+            // clear old top rank
             realm.deleteAll()
             
             // save the new rank
@@ -52,17 +51,64 @@ class ITunesFeedManager {
         }
     }
     
-    func fetchTopFreeAppsFromWebservice() {
+    func feetchAppsFromLocalStorage(searchText:String, _ callback: @escaping ([FeedEntry]?) -> Void) {
+        let realm = try! Realm()
+        
+        var apps = realm.objects(FeedEntry.self)
+        
+        if searchText.characters.count > 0 {
+            let predicate = NSPredicate(format: "name CONTAINS %@", searchText)
+            apps = apps.filter(predicate)
+        }
+        
+        let array = Array(apps)
+        callback(array)
+    }
+    
+    // get app data from webservice
+    func fetchAppsFromWebservice(_ callback: @escaping (NSError?, [FeedEntry]?) -> Void) {
+        let serviceParams: [CVarArg] = [feedLimit]
+        let topFreeAppEndpoint:String = String(format: ITunesFeedEndpoint, arguments: serviceParams)
+        
+        Alamofire.request(topFreeAppEndpoint, method:.get)
+            .responseObject { (response: DataResponse<ITunesFeed>) in
+                if response.result.isSuccess {
+                    
+                    // if the requeset succeded save the data in local storage
+                    let feedResponse = response.result.value
+                    if let topFreeApps = feedResponse?.apps {
+                        self.saveLocalStore(apps: topFreeApps)
+                        let array = Array(topFreeApps)
+                        callback(nil, array)
+                    }
+                } else {
+                    
+                    // return an error
+                    let serviceError = NSError(
+                        domain: "ItunesAppsFeed",
+                        code: Errors.webserviceError,
+                        userInfo: nil)
+                    callback(serviceError, nil)
+                }
+        }
+    }
+    
+    func fetchAppsFromWebservice() {
         let serviceParams: [CVarArg] = [feedLimit]
         let topFreeAppEndpoint:String = String(format: ITunesFeedEndpoint, arguments: serviceParams)
 
         Alamofire.request(topFreeAppEndpoint, method:.get)
             .responseObject { (response: DataResponse<ITunesFeed>) in
-            
-                let feedResponse = response.result.value
-                if let topFreeApps = feedResponse?.apps {
-                    self.saveLocalStore(apps: topFreeApps)
+                if response.result.isSuccess {
+                    let feedResponse = response.result.value
+                    if let topFreeApps = feedResponse?.apps {
+                        self.saveLocalStore(apps: topFreeApps)
+                        
+                    }
+                } else {
+                    
                 }
+                
                 
             /*let feedResponse = response.result.value
             print(feedResponse?.apps ?? "undefined")
@@ -72,6 +118,17 @@ class ITunesFeedManager {
                     print(appEntry.name)
                 }
             }*/
+        }
+    }
+    
+    func getImage(fromUrl urlString: String, success: @escaping (UIImage?)->Void, fail: @escaping (NSError?)->Void ) {
+        let url = NSURL(string: urlString);
+        SDWebImageManager.shared().downloadImage(with: url as URL!, options: .cacheMemoryOnly, progress: nil) { (image, error, cache, finished, withUrl) in
+            if ((image != nil) && finished) {
+                success(image)
+            } else {
+                fail(error as NSError?)
+            }
         }
     }
 }

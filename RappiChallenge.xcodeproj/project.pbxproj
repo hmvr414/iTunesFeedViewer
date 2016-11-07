@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AA10666F1DCAD1D600D0A133 /* FeedEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10666E1DCAD1D600D0A133 /* FeedEntry.swift */; };
+		AA2298581DCECE07008CAB0E /* HRToast+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2298571DCECE07008CAB0E /* HRToast+UIView.swift */; };
+		AA2AA43C1DCD1D6300B8C32C /* AppCatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AA43B1DCD1D6300B8C32C /* AppCatalogViewController.swift */; };
+		AA2AA43E1DCD30C600B8C32C /* AppCatalogPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AA43D1DCD30C600B8C32C /* AppCatalogPresenter.swift */; };
+		AA2AA4401DCD6D9400B8C32C /* AppCatalogDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AA43F1DCD6D9300B8C32C /* AppCatalogDependencies.swift */; };
+		AA2AA4421DCD710D00B8C32C /* AppCatalogInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AA4411DCD710D00B8C32C /* AppCatalogInteractor.swift */; };
+		AA2AA4441DCE568100B8C32C /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AA4431DCE568100B8C32C /* AppCell.swift */; };
+		AA339DF91DCFAF870001967C /* PushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA339DF81DCFAF870001967C /* PushAnimator.swift */; };
+		AA339DFB1DCFB3210001967C /* PopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA339DFA1DCFB3210001967C /* PopAnimator.swift */; };
 		AA74C1C61DCB8BC600922E68 /* ITunesFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74C1C51DCB8BC600922E68 /* ITunesFeedManager.swift */; };
 		AA9863F21DCACF7D004EED88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9863F11DCACF7D004EED88 /* AppDelegate.swift */; };
 		AA9863F41DCACF7D004EED88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9863F31DCACF7D004EED88 /* ViewController.swift */; };
@@ -16,7 +24,13 @@
 		AA9863FC1DCACF7D004EED88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9863FA1DCACF7D004EED88 /* LaunchScreen.storyboard */; };
 		AA9864071DCACF7E004EED88 /* RappiChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9864061DCACF7E004EED88 /* RappiChallengeTests.swift */; };
 		AA9864121DCACF7E004EED88 /* RappiChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9864111DCACF7E004EED88 /* RappiChallengeUITests.swift */; };
+		AAB909561DCF1D720063B83E /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB909551DCF1D720063B83E /* AppDetailViewController.swift */; };
+		AAB909581DCF1DC70063B83E /* AppDetailDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB909571DCF1DC70063B83E /* AppDetailDependencies.swift */; };
+		AAB9095A1DCF1E140063B83E /* AppDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB909591DCF1E140063B83E /* AppDetailPresenter.swift */; };
+		AAB9095C1DCF1E890063B83E /* AppDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB9095B1DCF1E890063B83E /* AppDetailInteractor.swift */; };
+		AAB9095E1DCF673B0063B83E /* AppCatalogWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB9095D1DCF673A0063B83E /* AppCatalogWireframe.swift */; };
 		AAE4E6261DCC23AD004FEB22 /* ArrayTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4E6251DCC23AD004FEB22 /* ArrayTransform.swift */; };
+		AAF5921A1DCEB138007930D2 /* AppCatalogCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF592191DCEB138007930D2 /* AppCatalogCollectionView.swift */; };
 		AFF1DA8EBD5FEEF925ED8F2D /* Pods_RappiChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B564E3CC10898AA6B6B128 /* Pods_RappiChallengeUITests.framework */; };
 		BD5DF2A4431FC2E7CF0B3435 /* Pods_RappiChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C02F00AE45AEBEBDA8C1BE /* Pods_RappiChallenge.framework */; };
 		D453763E06016C55D4389A5D /* Pods_RappiChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6068D88EF889D32A45CE8E23 /* Pods_RappiChallengeTests.framework */; };
@@ -48,6 +62,14 @@
 		6F2B7BA5F917BD06AF98A105 /* Pods-RappiChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RappiChallengeUITests/Pods-RappiChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A7ACEC57F3DCC7CC2C56AA9A /* Pods-RappiChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RappiChallenge/Pods-RappiChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		AA10666E1DCAD1D600D0A133 /* FeedEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedEntry.swift; path = Models/FeedEntry.swift; sourceTree = "<group>"; };
+		AA2298571DCECE07008CAB0E /* HRToast+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HRToast+UIView.swift"; path = "Util/HRToast+UIView.swift"; sourceTree = "<group>"; };
+		AA2AA43B1DCD1D6300B8C32C /* AppCatalogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCatalogViewController.swift; path = AppCatalog/AppCatalogViewController.swift; sourceTree = "<group>"; };
+		AA2AA43D1DCD30C600B8C32C /* AppCatalogPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCatalogPresenter.swift; path = AppCatalog/AppCatalogPresenter.swift; sourceTree = "<group>"; };
+		AA2AA43F1DCD6D9300B8C32C /* AppCatalogDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCatalogDependencies.swift; path = AppCatalog/AppCatalogDependencies.swift; sourceTree = "<group>"; };
+		AA2AA4411DCD710D00B8C32C /* AppCatalogInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCatalogInteractor.swift; path = AppCatalog/AppCatalogInteractor.swift; sourceTree = "<group>"; };
+		AA2AA4431DCE568100B8C32C /* AppCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCell.swift; path = AppCatalog/AppCell.swift; sourceTree = "<group>"; };
+		AA339DF81DCFAF870001967C /* PushAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PushAnimator.swift; path = AppDetail/PushAnimator.swift; sourceTree = "<group>"; };
+		AA339DFA1DCFB3210001967C /* PopAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopAnimator.swift; path = AppDetail/PopAnimator.swift; sourceTree = "<group>"; };
 		AA74C1C51DCB8BC600922E68 /* ITunesFeedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ITunesFeedManager.swift; path = Services/ITunesFeedManager.swift; sourceTree = "<group>"; };
 		AA9863EE1DCACF7D004EED88 /* RappiChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RappiChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA9863F11DCACF7D004EED88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +84,13 @@
 		AA98640D1DCACF7E004EED88 /* RappiChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RappiChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA9864111DCACF7E004EED88 /* RappiChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RappiChallengeUITests.swift; sourceTree = "<group>"; };
 		AA9864131DCACF7E004EED88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAB909551DCF1D720063B83E /* AppDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDetailViewController.swift; path = AppDetail/AppDetailViewController.swift; sourceTree = "<group>"; };
+		AAB909571DCF1DC70063B83E /* AppDetailDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDetailDependencies.swift; path = AppDetail/AppDetailDependencies.swift; sourceTree = "<group>"; };
+		AAB909591DCF1E140063B83E /* AppDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDetailPresenter.swift; path = AppDetail/AppDetailPresenter.swift; sourceTree = "<group>"; };
+		AAB9095B1DCF1E890063B83E /* AppDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDetailInteractor.swift; sourceTree = "<group>"; };
+		AAB9095D1DCF673A0063B83E /* AppCatalogWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCatalogWireframe.swift; path = AppCatalog/AppCatalogWireframe.swift; sourceTree = "<group>"; };
 		AAE4E6251DCC23AD004FEB22 /* ArrayTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayTransform.swift; path = Util/ArrayTransform.swift; sourceTree = "<group>"; };
+		AAF592191DCEB138007930D2 /* AppCatalogCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCatalogCollectionView.swift; path = AppCatalog/AppCatalogCollectionView.swift; sourceTree = "<group>"; };
 		EC6E115CE9A9B65CE940CEB3 /* Pods-RappiChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RappiChallengeTests/Pods-RappiChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD757A88AC3DF0805EC05A5D /* Pods-RappiChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-RappiChallenge/Pods-RappiChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +154,53 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		AA2AA43A1DCD1C6000B8C32C /* AppCatalog */ = {
+			isa = PBXGroup;
+			children = (
+				AA339DF51DCF83820001967C /* CustomControls */,
+				AA339DF41DCF834E0001967C /* Interactors */,
+				AA2AA43B1DCD1D6300B8C32C /* AppCatalogViewController.swift */,
+				AA2AA43D1DCD30C600B8C32C /* AppCatalogPresenter.swift */,
+				AA2AA43F1DCD6D9300B8C32C /* AppCatalogDependencies.swift */,
+				AAB9095D1DCF673A0063B83E /* AppCatalogWireframe.swift */,
+			);
+			name = AppCatalog;
+			sourceTree = "<group>";
+		};
+		AA339DF41DCF834E0001967C /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				AA2AA4411DCD710D00B8C32C /* AppCatalogInteractor.swift */,
+			);
+			name = Interactors;
+			sourceTree = "<group>";
+		};
+		AA339DF51DCF83820001967C /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				AAF592191DCEB138007930D2 /* AppCatalogCollectionView.swift */,
+				AA2AA4431DCE568100B8C32C /* AppCell.swift */,
+			);
+			name = CustomControls;
+			sourceTree = "<group>";
+		};
+		AA339DF61DCF85950001967C /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				AAB9095B1DCF1E890063B83E /* AppDetailInteractor.swift */,
+			);
+			name = Interactors;
+			sourceTree = "<group>";
+		};
+		AA339DF71DCFAF060001967C /* NavigationControllerAnimators */ = {
+			isa = PBXGroup;
+			children = (
+				AA339DF81DCFAF870001967C /* PushAnimator.swift */,
+				AA339DFA1DCFB3210001967C /* PopAnimator.swift */,
+			);
+			name = NavigationControllerAnimators;
+			sourceTree = "<group>";
+		};
 		AA74C1C21DCAF39A00922E68 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +234,9 @@
 		AA9863F01DCACF7D004EED88 /* RappiChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				AA339DF71DCFAF060001967C /* NavigationControllerAnimators */,
+				AAB909541DCF1D130063B83E /* AppDetail */,
+				AA2AA43A1DCD1C6000B8C32C /* AppCatalog */,
 				AAE4E6241DCC22A4004FEB22 /* Util */,
 				AA74C1C21DCAF39A00922E68 /* Services */,
 				AA10666D1DCAD1A400D0A133 /* Models */,
@@ -190,9 +268,21 @@
 			path = RappiChallengeUITests;
 			sourceTree = "<group>";
 		};
+		AAB909541DCF1D130063B83E /* AppDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AA339DF61DCF85950001967C /* Interactors */,
+				AAB909571DCF1DC70063B83E /* AppDetailDependencies.swift */,
+				AAB909551DCF1D720063B83E /* AppDetailViewController.swift */,
+				AAB909591DCF1E140063B83E /* AppDetailPresenter.swift */,
+			);
+			name = AppDetail;
+			sourceTree = "<group>";
+		};
 		AAE4E6241DCC22A4004FEB22 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				AA2298571DCECE07008CAB0E /* HRToast+UIView.swift */,
 				AAE4E6251DCC23AD004FEB22 /* ArrayTransform.swift */,
 			);
 			name = Util;
@@ -479,10 +569,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2AA43E1DCD30C600B8C32C /* AppCatalogPresenter.swift in Sources */,
 				AA9863F41DCACF7D004EED88 /* ViewController.swift in Sources */,
+				AAB9095E1DCF673B0063B83E /* AppCatalogWireframe.swift in Sources */,
+				AA2AA4401DCD6D9400B8C32C /* AppCatalogDependencies.swift in Sources */,
+				AAB9095C1DCF1E890063B83E /* AppDetailInteractor.swift in Sources */,
+				AAB9095A1DCF1E140063B83E /* AppDetailPresenter.swift in Sources */,
+				AA2AA4421DCD710D00B8C32C /* AppCatalogInteractor.swift in Sources */,
+				AAB909561DCF1D720063B83E /* AppDetailViewController.swift in Sources */,
+				AA339DFB1DCFB3210001967C /* PopAnimator.swift in Sources */,
 				AA74C1C61DCB8BC600922E68 /* ITunesFeedManager.swift in Sources */,
+				AAF5921A1DCEB138007930D2 /* AppCatalogCollectionView.swift in Sources */,
+				AA2AA4441DCE568100B8C32C /* AppCell.swift in Sources */,
+				AA2AA43C1DCD1D6300B8C32C /* AppCatalogViewController.swift in Sources */,
+				AA2298581DCECE07008CAB0E /* HRToast+UIView.swift in Sources */,
 				AA9863F21DCACF7D004EED88 /* AppDelegate.swift in Sources */,
+				AAB909581DCF1DC70063B83E /* AppDetailDependencies.swift in Sources */,
 				AAE4E6261DCC23AD004FEB22 /* ArrayTransform.swift in Sources */,
+				AA339DF91DCFAF870001967C /* PushAnimator.swift in Sources */,
 				AA10666F1DCAD1D600D0A133 /* FeedEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

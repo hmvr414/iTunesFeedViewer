@@ -16,7 +16,8 @@ class ViewController: UIViewController {
         
         let manager = ITunesFeedManager()
         
-        manager.fetchTopFreeAppsFromWebservice()
+        //manager.fetchTopFreeAppsFromWebservice()
+        manager.fetchTopFreeAppsFromLocalStorage()
     }
 
     override func didReceiveMemoryWarning() {

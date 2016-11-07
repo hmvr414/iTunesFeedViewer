@@ -17,6 +17,7 @@ target 'RappiChallenge' do
     pod 'ObjectMapper', '~> 2.2'
     pod 'ObjectMapper+Realm'
     pod 'AlamofireObjectMapper', '~> 4.0'
+    pod 'IBAnimatable'
 end
 
 
@@ -33,6 +34,7 @@ end
     pod 'ObjectMapper', '~> 2.2'
     pod 'ObjectMapper+Realm'
     pod 'AlamofireObjectMapper', '~> 4.0'
+    pod 'IBAnimatable'
   end
 
   target 'RappiChallengeUITests' do
@@ -48,6 +50,7 @@ end
     pod 'ObjectMapper', '~> 2.2'
     pod 'ObjectMapper+Realm'
     pod 'AlamofireObjectMapper', '~> 4.0'
+    pod 'IBAnimatable'
   end
 
 

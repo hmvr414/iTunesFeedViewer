@@ -41,8 +41,10 @@ class FeedCategory : Object, Mappable
 
 class FeedEntry : Object, Mappable
 {
+    dynamic var id = ""
     dynamic var name = ""
     dynamic var summary = ""
+    dynamic var contentType = ""
     dynamic var title = ""
     dynamic var artist = ""
     dynamic var releaseDate = ""
@@ -55,8 +57,10 @@ class FeedEntry : Object, Mappable
     }
     
     func mapping(map: Map) {
+        name <- map["id.attributes.im:id"]
         name <- map["im:name.label"]
         summary <- map["summary.label"]
+        contentType <- map["im:contentType.attributes.label"]
         title <- map["title.label"]
         artist <- map["im:artist.label"]
         releaseDate <- map["im:releaseDate.label"]
