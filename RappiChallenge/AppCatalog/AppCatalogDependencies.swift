@@ -18,7 +18,7 @@ class AppCatalogDependencies {
         let reachability = Reachability()!
         let interactor = AppCatalogInteractor()
         let wireframe = AppCatalogWireframeImpl()
-        let presenter = AppCatalogPresenterImpl()
+        let presenter = AppCatalogPresenter()
         
         viewController.presenter = presenter
         presenter.view = viewController

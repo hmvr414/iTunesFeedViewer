@@ -20,7 +20,7 @@ protocol AppDetailView : class {
 
 class AppDetailViewController : UIViewController {
     
-    var presenter:AppDetailPresenter!
+    var presenter:AppDetailPresenterInput!
     
     @IBOutlet weak var appImage: UIImageView!
     @IBOutlet weak var appAuthor: UILabel!

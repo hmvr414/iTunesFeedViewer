@@ -13,7 +13,7 @@ class AppDetailDependencies {
     class func setup(_ appDetailViewController: AppDetailViewController) {
         let itunesFeedManager = ITunesFeedManager()
         let interactor = AppDetailInteractor()
-        let presenter = AppDetailPresenterImpl()
+        let presenter = AppDetailPresenter()
         
         interactor.itunesFeedManager = itunesFeedManager
         presenter.interactor = interactor

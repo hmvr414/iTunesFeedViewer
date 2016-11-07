@@ -9,14 +9,14 @@
 import Foundation
 import UIKit
 
-protocol AppCatalogPresenter: class {
+protocol AppCatalogPresenterInput: class {
     func reloadData()
     func getApps(filter: String)
     func showDetailsForApp()
     func setupNextViewData(_ segue: UIStoryboardSegue)
 }
 
-class AppCatalogPresenterImpl : AppCatalogPresenter, AppCatalogInteractorOutput {
+class AppCatalogPresenter : AppCatalogPresenterInput, AppCatalogInteractorOutput {
     
     weak var view: AppCatalogView!
     var interactor: AppCatalogInteractorInput!

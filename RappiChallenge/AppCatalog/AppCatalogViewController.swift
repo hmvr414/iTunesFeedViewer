@@ -20,8 +20,9 @@ protocol AppCatalogView: class {
 class AppCatalogViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var activityIndicator: UIView!
     
-    var presenter:AppCatalogPresenter!
+    var presenter:AppCatalogPresenterInput!
     var apps: [FeedEntry] = []
     
     var refreshControl:UIRefreshControl!
@@ -35,26 +36,36 @@ class AppCatalogViewController: UIViewController {
     
     var selectedIndex:IndexPath!
     
+    var ipad = false
+    
     func toggleSearchBar(_ sender: Any) {
         
         if searchMode {
-            navigationItem.titleView = titleView
-            addSearchButton()
-            UIView.animate(withDuration: 0.4, animations: {
-                self.searchBar.alpha = 0
-            })
+            searchModeOff()
         } else {
-            navigationItem.titleView = searchBar
-            searchBar.alpha = 0
-            UIView.animate(withDuration: 0.4, animations: {
-                self.searchBar.alpha = 1
-            }, completion: { finished in
-                self.searchBar.becomeFirstResponder()
-            })
-            addCloseSearchButton()
+            searchModeOn()
         }
-        
-        searchMode = !searchMode
+    }
+    
+    func searchModeOn() {
+        navigationItem.titleView = searchBar
+        searchBar.alpha = 0
+        UIView.animate(withDuration: 0.4, animations: {
+            self.searchBar.alpha = 1
+        }, completion: { finished in
+            self.searchBar.becomeFirstResponder()
+        })
+        addCloseSearchButton()
+        searchMode = true
+    }
+    
+    func searchModeOff() {
+        navigationItem.titleView = titleView
+        addSearchButton()
+        UIView.animate(withDuration: 0.4, animations: {
+            self.searchBar.alpha = 0
+        })
+        searchMode = false
     }
     
     
@@ -74,8 +85,10 @@ class AppCatalogViewController: UIViewController {
         presenter.reloadData()
         
         if UIDevice.current.userInterfaceIdiom == .pad {
+            ipad = true
             let value = UIInterfaceOrientation.landscapeLeft.rawValue
             UIDevice.current.setValue(value, forKey: "orientation")
+            collectionView.contentInset = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
         }
     }
     
@@ -127,6 +140,7 @@ class AppCatalogViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.delegate = self
+        searchModeOff()
     }
     
     override func didReceiveMemoryWarning() {
@@ -209,6 +223,17 @@ extension AppCatalogViewController : AppCatalogView {
     
     func dismissAllActivityIndicators() {
         refreshControl.endRefreshing()
+        if activityIndicator != nil {
+            UIView.animate(
+                withDuration: 0.5,
+                animations: {
+                    self.activityIndicator.alpha = 0
+                }, completion: { finished in
+                    self.activityIndicator = nil
+                })
+            
+            
+        }
     }
 }
 
@@ -270,8 +295,14 @@ extension AppCatalogViewController : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+        var reusableIdentifier = AppCell.AppCellIdentifiers.appCell
+        
+        if ipad {
+            reusableIdentifier = AppCell.AppCellIdentifiers.appCellIpad
+        }
+        
         let cell = collectionView.dequeueReusableCell(
-            withReuseIdentifier: "appCell", for: indexPath as IndexPath) as! AppCell
+            withReuseIdentifier: reusableIdentifier, for: indexPath as IndexPath) as! AppCell
         
         applyCellAnimations(cell, row: indexPath.row)
         
@@ -293,11 +324,18 @@ extension AppCatalogViewController : UICollectionViewDelegate {
 extension AppCatalogViewController : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
+        var cellHeight:CGFloat = 112.0
         var itemSize: CGSize
         //let length = (UIScreen.main.bounds.width) / 3 - 1
-        let length = UIScreen.main.bounds.width - 20
+        var cellWidth = UIScreen.main.bounds.width - 20
+        
+        if ipad {
+            cellHeight = 170.0
+            cellWidth = (UIScreen.main.bounds.width) / 4 - 20
+        }
+        
         //let cellAttributes = collectionView.layoutAttributesForItem(at: indexPath)
-        itemSize = CGSize(width: length, height: 112)
+        itemSize = CGSize(width: cellWidth, height: cellHeight)
         
         
         return itemSize

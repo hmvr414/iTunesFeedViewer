@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol AppDetailPresenter : class {
+protocol AppDetailPresenterInput : class {
     func setAppModel(_ appModel:FeedEntry)
     func loadContent()
 }
 
-class AppDetailPresenterImpl : AppDetailPresenter, AppDetailInteractorOutput {
+class AppDetailPresenter : AppDetailPresenterInput, AppDetailInteractorOutput {
     
     weak var appDetailView : AppDetailView!
     var interactor : AppDetailInteractorInput!

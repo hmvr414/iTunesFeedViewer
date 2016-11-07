@@ -16,6 +16,11 @@ class AppCell : UICollectionViewCell {
     @IBOutlet weak var appName: UILabel!
     @IBOutlet weak var appAuthor: UILabel!
     
+    struct AppCellIdentifiers {
+        static let appCell = "appCell"
+        static let appCellIpad = "appCelliPad"
+    }
+    
     @IBInspectable var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
